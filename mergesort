@@ -1,0 +1,31 @@
+QSTN:
+Count of smaller elements on right side of each element in an Array using Merge sort
+
+
+Given an integer array nums, return an integer array counts where counts[i] is the number of smaller elements to the right of nums[i].
+ ex: 
+ Input: nums = [5,2,6,1]
+Output: [2,1,1,0]
+Explanation:
+To the right of 5 there are 2 smaller elements (2 and 1).
+To the right of 2 there is only 1 smaller element (1).
+To the right of 6 there is 1 smaller element (1).
+To the right of 1 there is 0 smaller element.
+
+
+
+Pseudocode:
+      
+         *initialize variable.
+         *create new arr for lop use loop for all the element.
+         *function create (frst,mid,last)and temp varialble craete to stored variable.
+         *for loop use this loop find compare element( i-mid&&j-last(i>=frst && j>=mid+1  )
+         *loop use add,count find,initial value insert,merger value (condition )
+       *for  loop use merge frst and last arr.
+       loop use push new element,temp[ value push.
+       *loop execute only for condition check...not add initial index value
+        condition:
+      mid = (frst +last) >> 1;
+      mergeSort(frst, mid);
+      mergeSort(mid + 1, last);
+      merge(frst, mid, last);
